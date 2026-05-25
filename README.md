@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://cdn.simpleicons.org/openai/111111" alt="OpenAI mark" width="72" height="72">
+  <img src="./assets/omx-prompts-hero.svg" alt="OMX Prompts hero" width="860">
 
   <h1>OMX Prompts</h1>
 
@@ -169,11 +169,11 @@ On macOS, Linux, or WSL, the basic setup is similar.
 This README intentionally uses lightweight open web assets instead of heavy decorative screenshots:
 
 - Badges are generated with [Shields.io](https://shields.io/).
+- The hero image is a local SVG committed to this repository, so it does not depend on a third-party image CDN.
 - Badge logos use Shields.io logo support, which is based on common open icon sources such as Simple Icons.
-- The small OpenAI mark is loaded from the [Simple Icons CDN](https://simpleicons.org/).
 - Product links point to the official [OpenAI Codex docs](https://platform.openai.com/docs/codex), the OpenAI [Introducing Codex](https://openai.com/index/introducing-codex/) page, and [oh-my-codex docs](https://oh-my-codex.dev/docs.html).
 
-The visual style is deliberately minimal: a compact hero, badges, and a workflow diagram. No stock imagery, no oversized banners, no fake screenshots.
+The visual style is deliberately minimal: a local SVG hero, badges, and a workflow diagram. No stock imagery, no oversized banners, no fake screenshots.
 
 ## Install Codex CLI
 
