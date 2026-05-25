@@ -202,7 +202,7 @@ This README intentionally uses lightweight open web assets instead of heavy deco
 
 - Badges are generated with [Shields.io](https://shields.io/).
 - The hero image is a local SVG committed to this repository, so it does not depend on a third-party image CDN.
-- A local social preview asset is available at [`assets/social-preview.svg`](assets/social-preview.svg). Upload it in GitHub repository settings if you want the link preview to match the README.
+- Local social preview assets are available at [`assets/social-preview.svg`](assets/social-preview.svg) and [`assets/social-preview.png`](assets/social-preview.png). Upload the PNG in GitHub repository settings if you want the link preview to match the README.
 - Badge logos use Shields.io logo support, which is based on common open icon sources such as Simple Icons.
 - Product links point to the official [OpenAI Codex docs](https://platform.openai.com/docs/codex), the OpenAI [Introducing Codex](https://openai.com/index/introducing-codex/) page, and [oh-my-codex docs](https://oh-my-codex.dev/docs.html).
 
@@ -1128,6 +1128,7 @@ omx-prompts/
   assets/
     omx-prompts-hero.svg
     social-preview.svg
+    social-preview.png
   docs/
     PROMPT_QUALITY_CHECKLIST.md
     PROMPT_SELECTION_GUIDE.md
