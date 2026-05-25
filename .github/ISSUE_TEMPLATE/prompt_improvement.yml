@@ -1,0 +1,29 @@
+name: Prompt improvement
+description: Suggest a clearer, safer, or more useful version of an existing prompt.
+title: "[Prompt Improvement]: "
+labels: ["prompt-improvement", "enhancement"]
+body:
+  - type: input
+    id: prompt_file
+    attributes:
+      label: Prompt file
+      placeholder: "omx-super-universal-autonomous-delivery-prompt.md"
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What is weak or missing?
+      description: Explain the problem with the current prompt.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
+      description: Share exact wording if you have it.
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence or example
+      description: Did this show up in a real Codex/OMX run?

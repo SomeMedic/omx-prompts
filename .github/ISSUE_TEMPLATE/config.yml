@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: OpenAI Codex docs
+    url: https://platform.openai.com/docs/codex
+    about: Official OpenAI Codex documentation.
+  - name: oh-my-codex docs
+    url: https://oh-my-codex.dev/docs.html
+    about: Official oh-my-codex documentation.

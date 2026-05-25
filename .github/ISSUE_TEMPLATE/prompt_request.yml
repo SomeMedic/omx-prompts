@@ -1,0 +1,37 @@
+name: Prompt request
+description: Request a new Codex/OMX prompt for a workflow that is not covered yet.
+title: "[Prompt Request]: "
+labels: ["prompt-request", "enhancement"]
+body:
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Workflow
+      description: What should the prompt help Codex/OMX do?
+      placeholder: "Example: create a CI/CD pipeline for a Next.js + NestJS app..."
+    validations:
+      required: true
+  - type: dropdown
+    id: project_state
+    attributes:
+      label: Project state
+      options:
+        - Empty project
+        - Docs-first project
+        - Existing app
+        - Existing app with a specific feature
+        - Maintenance/hardening task
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: desired_artifacts
+    attributes:
+      label: Desired artifacts
+      description: What files, reports, or checks should the prompt produce?
+      placeholder: "README updates, TEST_PLAN.md, GitHub Actions workflow, final report..."
+  - type: textarea
+    id: safety
+    attributes:
+      label: Safety constraints
+      description: Any credentials, production systems, destructive actions, or compliance concerns?

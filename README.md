@@ -47,6 +47,8 @@ This repository is designed for a very specific workflow:
 
 The prompts are intentionally long. They are not chat snippets. They are operating contracts for autonomous software delivery.
 
+> If this repository saves you setup time or helps Codex ship more complete work, a star helps other builders find it.
+
 ## Quick Start
 
 ```bash
@@ -74,6 +76,36 @@ For the first run, fill only the essential placeholders:
 ```
 
 Leave the rest as `AUTO_DETECT`, `AUTO_DECIDE`, or `UNKNOWN` if you want Codex to infer from context.
+
+## Use Cases
+
+| Use case | Best starting point |
+|---|---|
+| Start from an empty folder and rough idea | `omx-super-universal-autonomous-delivery-prompt.md` |
+| Build a product from docs | `universal-codex-product-development-prompt.md` |
+| Implement a feature in an existing app | `omx-feature-from-spec-prompt.md` |
+| Apply a complete frontend redesign | `omx-frontend-redesign-apply-prompt.md` |
+| Integrate Stripe/OpenAI/Maps/email/storage/CRM APIs | `omx-api-integration-prompt.md` |
+| Fix a stubborn bug with root-cause analysis | `omx-bugfix-root-cause-prompt.md` |
+| Add meaningful tests and QA checks | `omx-test-and-qa-hardening-prompt.md` |
+| Review auth, permissions, secrets, PII, uploads, webhooks | `omx-security-review-hardening-prompt.md` |
+| Optimize slow flows or endpoints | `omx-performance-optimization-prompt.md` |
+| Prepare for production-like local readiness | `omx-production-hardening-prompt.md` |
+| Prepare a release candidate | `omx-release-readiness-prompt.md` |
+
+## Examples
+
+The `examples/` directory contains filled placeholder examples:
+
+- [`examples/empty-project-to-product.md`](examples/empty-project-to-product.md)
+- [`examples/docs-to-full-product.md`](examples/docs-to-full-product.md)
+- [`examples/existing-app-feature.md`](examples/existing-app-feature.md)
+- [`examples/frontend-redesign.md`](examples/frontend-redesign.md)
+- [`examples/api-integration.md`](examples/api-integration.md)
+- [`examples/qa-hardening.md`](examples/qa-hardening.md)
+- [`examples/security-hardening.md`](examples/security-hardening.md)
+
+If you are unsure how to fill a prompt, start there.
 
 ## What This Repository Is For
 
@@ -170,6 +202,7 @@ This README intentionally uses lightweight open web assets instead of heavy deco
 
 - Badges are generated with [Shields.io](https://shields.io/).
 - The hero image is a local SVG committed to this repository, so it does not depend on a third-party image CDN.
+- A local social preview asset is available at [`assets/social-preview.svg`](assets/social-preview.svg). Upload it in GitHub repository settings if you want the link preview to match the README.
 - Badge logos use Shields.io logo support, which is based on common open icon sources such as Simple Icons.
 - Product links point to the official [OpenAI Codex docs](https://platform.openai.com/docs/codex), the OpenAI [Introducing Codex](https://openai.com/index/introducing-codex/) page, and [oh-my-codex docs](https://oh-my-codex.dev/docs.html).
 
@@ -797,6 +830,8 @@ Use this decision guide:
 | I want a PRD from rough notes | `omx-product-discovery-prd-prompt.md` |
 | I want a codebase audit | `omx-codebase-audit-and-refactor-plan-prompt.md` |
 
+For a longer decision guide, see [`docs/PROMPT_SELECTION_GUIDE.md`](docs/PROMPT_SELECTION_GUIDE.md).
+
 ## Recommended Workflow For A New Empty Project
 
 1. Create a folder.
@@ -1057,12 +1092,56 @@ When adding new prompts:
 7. Include evidence requirements.
 8. Update this README.
 
+See:
+
+- [`CONTRIBUTING.md`](CONTRIBUTING.md)
+- [`ROADMAP.md`](ROADMAP.md)
+- [`CHANGELOG.md`](CHANGELOG.md)
+- [`docs/PROMPT_QUALITY_CHECKLIST.md`](docs/PROMPT_QUALITY_CHECKLIST.md)
+
+## Community
+
+Useful contribution paths:
+
+- Request a prompt with the `Prompt request` issue template.
+- Suggest better wording with the `Prompt improvement` issue template.
+- Share real-world usage through the `Showcase / field report` issue template.
+- Open a pull request with a new prompt, example, or documentation improvement.
+
+The most valuable contributions are field-tested prompts and examples from real Codex/OMX runs.
+
 ## Suggested Repository Layout
 
 ```text
 omx-prompts/
+  .github/
+    ISSUE_TEMPLATE/
+    pull_request_template.md
   README.md
+  CHANGELOG.md
+  CONTRIBUTING.md
   INSTRUCTIONS.md
+  LICENSE
+  ROADMAP.md
+  SECURITY.md
+  SUPPORT.md
+  assets/
+    omx-prompts-hero.svg
+    social-preview.svg
+  docs/
+    PROMPT_QUALITY_CHECKLIST.md
+    PROMPT_SELECTION_GUIDE.md
+  examples/
+    README.md
+    empty-project-to-product.md
+    docs-to-full-product.md
+    existing-app-feature.md
+    frontend-redesign.md
+    api-integration.md
+    qa-hardening.md
+    security-hardening.md
+  showcase/
+    README.md
   AGENTS.template.md
   generate-agents-md-prompt.md
   universal-codex-product-development-prompt.md

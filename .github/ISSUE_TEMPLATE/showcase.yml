@@ -1,0 +1,41 @@
+name: Showcase / field report
+description: Share what happened when you used one of the prompts.
+title: "[Showcase]: "
+labels: ["showcase"]
+body:
+  - type: input
+    id: prompt_file
+    attributes:
+      label: Prompt used
+      placeholder: "omx-feature-from-spec-prompt.md"
+    validations:
+      required: true
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: Outcome
+      options:
+        - Worked well
+        - Partially worked
+        - Needed manual steering
+        - Failed
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Project context
+      description: What kind of project was it?
+  - type: textarea
+    id: result
+    attributes:
+      label: Result
+      description: What did Codex/OMX produce?
+    validations:
+      required: true
+  - type: textarea
+    id: lessons
+    attributes:
+      label: Lessons
+      description: What should the prompt do better?
