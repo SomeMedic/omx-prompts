@@ -7,7 +7,7 @@ body:
     id: prompt_file
     attributes:
       label: Prompt used
-      placeholder: "omx-feature-from-spec-prompt.md"
+      placeholder: "prompts/omx-feature-from-spec-prompt.md"
     validations:
       required: true
   - type: dropdown

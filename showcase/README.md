@@ -20,7 +20,7 @@ Use this template:
 
 ## Prompt Used
 
-`omx-super-universal-autonomous-delivery-prompt.md`
+`prompts/omx-super-universal-autonomous-delivery-prompt.md`
 
 ## Starting State
 

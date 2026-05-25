@@ -27,7 +27,7 @@ Do not include secrets, private credentials, paid API keys, production URLs, or 
 If you are unsure, start with:
 
 ```text
-omx-super-universal-autonomous-delivery-prompt.md
+prompts/omx-super-universal-autonomous-delivery-prompt.md
 ```
 
 It is designed to detect the project state and route itself.

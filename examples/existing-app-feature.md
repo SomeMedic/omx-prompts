@@ -5,7 +5,7 @@ Use this when a project already exists and you need a complete feature implement
 Recommended prompt:
 
 ```text
-omx-feature-from-spec-prompt.md
+prompts/omx-feature-from-spec-prompt.md
 ```
 
 Filled placeholders:

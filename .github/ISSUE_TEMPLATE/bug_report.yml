@@ -7,7 +7,7 @@ body:
     id: prompt_file
     attributes:
       label: Prompt file
-      placeholder: "omx-api-integration-prompt.md"
+      placeholder: "prompts/omx-api-integration-prompt.md"
     validations:
       required: true
   - type: textarea

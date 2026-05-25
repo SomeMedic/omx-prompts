@@ -24,4 +24,4 @@ Use these examples when you want to understand how to replace placeholders befor
 4. Replace the prompt placeholders.
 5. Paste the final prompt into Codex from your project root.
 
-If you are unsure, use `omx-super-universal-autonomous-delivery-prompt.md`.
+If you are unsure, use `prompts/omx-super-universal-autonomous-delivery-prompt.md`.

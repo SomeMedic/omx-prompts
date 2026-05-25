@@ -5,7 +5,7 @@ Use this when the project touches auth, permissions, payments, PII, file uploads
 Recommended prompt:
 
 ```text
-omx-security-review-hardening-prompt.md
+prompts/omx-security-review-hardening-prompt.md
 ```
 
 Filled placeholders:

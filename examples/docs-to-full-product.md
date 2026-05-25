@@ -5,7 +5,7 @@ Use this when `./docs` already contains a PRD, flows, acceptance criteria, or te
 Recommended prompt:
 
 ```text
-universal-codex-product-development-prompt.md
+prompts/universal-codex-product-development-prompt.md
 ```
 
 Filled placeholders:

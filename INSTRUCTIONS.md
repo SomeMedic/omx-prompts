@@ -64,7 +64,7 @@ codex
 Then paste:
 
 ```text
-omx-super-universal-autonomous-delivery-prompt.md
+prompts/omx-super-universal-autonomous-delivery-prompt.md
 ```
 
 For the first run, fill only the essential placeholders:
@@ -81,17 +81,17 @@ Leave the rest as `AUTO_DETECT`, `AUTO_DECIDE`, or `UNKNOWN` if you want Codex t
 
 | Use case | Best starting point |
 |---|---|
-| Start from an empty folder and rough idea | `omx-super-universal-autonomous-delivery-prompt.md` |
-| Build a product from docs | `universal-codex-product-development-prompt.md` |
-| Implement a feature in an existing app | `omx-feature-from-spec-prompt.md` |
-| Apply a complete frontend redesign | `omx-frontend-redesign-apply-prompt.md` |
-| Integrate Stripe/OpenAI/Maps/email/storage/CRM APIs | `omx-api-integration-prompt.md` |
-| Fix a stubborn bug with root-cause analysis | `omx-bugfix-root-cause-prompt.md` |
-| Add meaningful tests and QA checks | `omx-test-and-qa-hardening-prompt.md` |
-| Review auth, permissions, secrets, PII, uploads, webhooks | `omx-security-review-hardening-prompt.md` |
-| Optimize slow flows or endpoints | `omx-performance-optimization-prompt.md` |
-| Prepare for production-like local readiness | `omx-production-hardening-prompt.md` |
-| Prepare a release candidate | `omx-release-readiness-prompt.md` |
+| Start from an empty folder and rough idea | `prompts/omx-super-universal-autonomous-delivery-prompt.md` |
+| Build a product from docs | `prompts/universal-codex-product-development-prompt.md` |
+| Implement a feature in an existing app | `prompts/omx-feature-from-spec-prompt.md` |
+| Apply a complete frontend redesign | `prompts/omx-frontend-redesign-apply-prompt.md` |
+| Integrate Stripe/OpenAI/Maps/email/storage/CRM APIs | `prompts/omx-api-integration-prompt.md` |
+| Fix a stubborn bug with root-cause analysis | `prompts/omx-bugfix-root-cause-prompt.md` |
+| Add meaningful tests and QA checks | `prompts/omx-test-and-qa-hardening-prompt.md` |
+| Review auth, permissions, secrets, PII, uploads, webhooks | `prompts/omx-security-review-hardening-prompt.md` |
+| Optimize slow flows or endpoints | `prompts/omx-performance-optimization-prompt.md` |
+| Prepare for production-like local readiness | `prompts/omx-production-hardening-prompt.md` |
+| Prepare a release candidate | `prompts/omx-release-readiness-prompt.md` |
 
 ## Examples
 
@@ -338,7 +338,7 @@ If your folder has documentation but no implementation:
 1. Put docs in `./docs`.
 2. Optionally copy `AGENTS.template.md` into the project as `AGENTS.md`.
 3. Start Codex in the project root.
-4. Paste `universal-codex-product-development-prompt.md` or `omx-super-universal-autonomous-delivery-prompt.md`.
+4. Paste `prompts/universal-codex-product-development-prompt.md` or `prompts/omx-super-universal-autonomous-delivery-prompt.md`.
 
 The prompt will tell Codex to:
 
@@ -363,18 +363,18 @@ codex
 
 Then choose a task-specific prompt:
 
-- feature work: `omx-feature-from-spec-prompt.md`
-- redesign: `omx-frontend-redesign-apply-prompt.md`
-- bugfix: `omx-bugfix-root-cause-prompt.md`
-- QA/test hardening: `omx-test-and-qa-hardening-prompt.md`
-- security: `omx-security-review-hardening-prompt.md`
-- performance: `omx-performance-optimization-prompt.md`
-- production readiness: `omx-production-hardening-prompt.md`
-- release readiness: `omx-release-readiness-prompt.md`
-- docs/runbooks: `omx-docs-onboarding-runbook-prompt.md`
-- data model: `omx-database-data-model-prompt.md`
-- integration: `omx-api-integration-prompt.md`
-- anything broad or unclear: `omx-super-universal-autonomous-delivery-prompt.md`
+- feature work: `prompts/omx-feature-from-spec-prompt.md`
+- redesign: `prompts/omx-frontend-redesign-apply-prompt.md`
+- bugfix: `prompts/omx-bugfix-root-cause-prompt.md`
+- QA/test hardening: `prompts/omx-test-and-qa-hardening-prompt.md`
+- security: `prompts/omx-security-review-hardening-prompt.md`
+- performance: `prompts/omx-performance-optimization-prompt.md`
+- production readiness: `prompts/omx-production-hardening-prompt.md`
+- release readiness: `prompts/omx-release-readiness-prompt.md`
+- docs/runbooks: `prompts/omx-docs-onboarding-runbook-prompt.md`
+- data model: `prompts/omx-database-data-model-prompt.md`
+- integration: `prompts/omx-api-integration-prompt.md`
+- anything broad or unclear: `prompts/omx-super-universal-autonomous-delivery-prompt.md`
 
 The prompts are written to make Codex inspect the repository before asking you questions.
 
@@ -409,7 +409,7 @@ Example:
 
 ## Prompt File Catalog
 
-### `omx-super-universal-autonomous-delivery-prompt.md`
+### `prompts/omx-super-universal-autonomous-delivery-prompt.md`
 
 The most universal prompt in the repository.
 
@@ -450,7 +450,7 @@ If the docs or code are enough, it proceeds without unnecessary questions.
 
 This is the best default prompt for "build or improve anything with maximum autonomy."
 
-### `universal-codex-product-development-prompt.md`
+### `prompts/universal-codex-product-development-prompt.md`
 
 Use this for building a full product from scratch when you already have at least some product direction or documentation.
 
@@ -495,7 +495,7 @@ cp "/path/to/omx-prompts/AGENTS.template.md" ./AGENTS.md
 
 Then edit the top-level details for your project if needed.
 
-### `generate-agents-md-prompt.md`
+### `prompts/generate-agents-md-prompt.md`
 
 Use this when you want Codex to generate a custom `AGENTS.md` for an existing repository.
 
@@ -516,7 +516,7 @@ Then it creates a project-specific `AGENTS.md`.
 
 Best for existing codebases.
 
-### `omx-frontend-redesign-apply-prompt.md`
+### `prompts/omx-frontend-redesign-apply-prompt.md`
 
 Use this when you have an existing frontend and want Codex to design and apply a new visual/UX direction.
 
@@ -553,7 +553,7 @@ The prompt tells Codex to:
 
 Use it when the app works but looks weak, inconsistent, generic, or unfinished.
 
-### `omx-feature-from-spec-prompt.md`
+### `prompts/omx-feature-from-spec-prompt.md`
 
 Use this for implementing a feature end to end from a spec.
 
@@ -569,7 +569,7 @@ Good for:
 
 It creates `FEATURE_PLAN.md`, implements the feature, adds tests, performs QA, and writes `FEATURE_REPORT.md`.
 
-### `omx-api-integration-prompt.md`
+### `prompts/omx-api-integration-prompt.md`
 
 Use this for external service integrations.
 
@@ -599,7 +599,7 @@ It emphasizes:
 
 Use this when real external APIs are involved and you do not want Codex to fake production completion.
 
-### `omx-database-data-model-prompt.md`
+### `prompts/omx-database-data-model-prompt.md`
 
 Use this when the main work is schema, data model, migrations, seed data, or persistence behavior.
 
@@ -616,7 +616,7 @@ Good for:
 
 It creates `DATA_MODEL.md` and `DATA_MODEL_REPORT.md`.
 
-### `omx-bugfix-root-cause-prompt.md`
+### `prompts/omx-bugfix-root-cause-prompt.md`
 
 Use this for bugs.
 
@@ -632,7 +632,7 @@ It forces a root-cause-first workflow:
 
 Use this when you want Codex to stop guessing and actually diagnose.
 
-### `omx-test-and-qa-hardening-prompt.md`
+### `prompts/omx-test-and-qa-hardening-prompt.md`
 
 Use this when the app exists but quality confidence is low.
 
@@ -649,7 +649,7 @@ It creates or updates `TEST_PLAN.md`, `QA_CHECKLIST.md`, and `QA_HARDENING_REPOR
 
 Use this before relying on an app generated by AI.
 
-### `omx-security-review-hardening-prompt.md`
+### `prompts/omx-security-review-hardening-prompt.md`
 
 Use this for security-sensitive review and local hardening.
 
@@ -672,7 +672,7 @@ It creates `SECURITY_REVIEW.md`, `SECURITY_HARDENING_PLAN.md`, and `SECURITY_REP
 
 Use it before production or before adding users to an app.
 
-### `omx-performance-optimization-prompt.md`
+### `prompts/omx-performance-optimization-prompt.md`
 
 Use this when performance matters.
 
@@ -697,7 +697,7 @@ Good for:
 
 It creates `PERFORMANCE_BASELINE.md` and `PERFORMANCE_REPORT.md`.
 
-### `omx-production-hardening-prompt.md`
+### `prompts/omx-production-hardening-prompt.md`
 
 Use this when the app works locally but needs production-shaped readiness.
 
@@ -717,7 +717,7 @@ It does not deploy production by default.
 
 It creates `PRODUCTION_READINESS.md` and `PRODUCTION_HARDENING_REPORT.md`.
 
-### `omx-release-readiness-prompt.md`
+### `prompts/omx-release-readiness-prompt.md`
 
 Use this before a release.
 
@@ -737,7 +737,7 @@ It creates `RELEASE_READINESS.md` and `RELEASE_NOTES.md`.
 
 It does not deploy by default.
 
-### `omx-docs-onboarding-runbook-prompt.md`
+### `prompts/omx-docs-onboarding-runbook-prompt.md`
 
 Use this when documentation is missing, stale, or insufficient.
 
@@ -756,7 +756,7 @@ It verifies commands where feasible and writes `DOCS_REPORT.md`.
 
 Use it when a project is hard to understand or hard to run.
 
-### `omx-product-discovery-prd-prompt.md`
+### `prompts/omx-product-discovery-prd-prompt.md`
 
 Use this when you have rough notes but need a real PRD before building.
 
@@ -772,7 +772,7 @@ It does not implement code.
 
 Use it when the product idea is still fuzzy and you want Codex to turn it into implementation-ready documentation.
 
-### `omx-codebase-audit-and-refactor-plan-prompt.md`
+### `prompts/omx-codebase-audit-and-refactor-plan-prompt.md`
 
 Use this to audit a codebase and create a prioritized refactor plan.
 
@@ -811,24 +811,24 @@ Use this decision guide:
 
 | Situation | Prompt |
 |---|---|
-| I want one prompt for anything | `omx-super-universal-autonomous-delivery-prompt.md` |
-| I want to build a full product from docs | `universal-codex-product-development-prompt.md` |
-| I have an empty folder and vague idea | `omx-super-universal-autonomous-delivery-prompt.md` |
-| I need a custom AGENTS.md | `generate-agents-md-prompt.md` |
+| I want one prompt for anything | `prompts/omx-super-universal-autonomous-delivery-prompt.md` |
+| I want to build a full product from docs | `prompts/universal-codex-product-development-prompt.md` |
+| I have an empty folder and vague idea | `prompts/omx-super-universal-autonomous-delivery-prompt.md` |
+| I need a custom AGENTS.md | `prompts/generate-agents-md-prompt.md` |
 | I want a ready AGENTS.md template | `AGENTS.template.md` |
-| I want to redesign an existing frontend | `omx-frontend-redesign-apply-prompt.md` |
-| I want to implement a feature | `omx-feature-from-spec-prompt.md` |
-| I want to integrate an external API | `omx-api-integration-prompt.md` |
-| I want to design data models/migrations | `omx-database-data-model-prompt.md` |
-| I need a bug fixed properly | `omx-bugfix-root-cause-prompt.md` |
-| I want better tests and QA | `omx-test-and-qa-hardening-prompt.md` |
-| I want security review/hardening | `omx-security-review-hardening-prompt.md` |
-| I want performance improvements | `omx-performance-optimization-prompt.md` |
-| I want production readiness | `omx-production-hardening-prompt.md` |
-| I want release readiness | `omx-release-readiness-prompt.md` |
-| I want docs and runbooks | `omx-docs-onboarding-runbook-prompt.md` |
-| I want a PRD from rough notes | `omx-product-discovery-prd-prompt.md` |
-| I want a codebase audit | `omx-codebase-audit-and-refactor-plan-prompt.md` |
+| I want to redesign an existing frontend | `prompts/omx-frontend-redesign-apply-prompt.md` |
+| I want to implement a feature | `prompts/omx-feature-from-spec-prompt.md` |
+| I want to integrate an external API | `prompts/omx-api-integration-prompt.md` |
+| I want to design data models/migrations | `prompts/omx-database-data-model-prompt.md` |
+| I need a bug fixed properly | `prompts/omx-bugfix-root-cause-prompt.md` |
+| I want better tests and QA | `prompts/omx-test-and-qa-hardening-prompt.md` |
+| I want security review/hardening | `prompts/omx-security-review-hardening-prompt.md` |
+| I want performance improvements | `prompts/omx-performance-optimization-prompt.md` |
+| I want production readiness | `prompts/omx-production-hardening-prompt.md` |
+| I want release readiness | `prompts/omx-release-readiness-prompt.md` |
+| I want docs and runbooks | `prompts/omx-docs-onboarding-runbook-prompt.md` |
+| I want a PRD from rough notes | `prompts/omx-product-discovery-prd-prompt.md` |
+| I want a codebase audit | `prompts/omx-codebase-audit-and-refactor-plan-prompt.md` |
 
 For a longer decision guide, see [`docs/PROMPT_SELECTION_GUIDE.md`](docs/PROMPT_SELECTION_GUIDE.md).
 
@@ -848,7 +848,7 @@ git init
 codex
 ```
 
-3. Paste `omx-super-universal-autonomous-delivery-prompt.md`.
+3. Paste `prompts/omx-super-universal-autonomous-delivery-prompt.md`.
 
 4. Fill the placeholders minimally:
 
@@ -884,7 +884,7 @@ git commit -m "Add product documentation"
 codex
 ```
 
-5. Paste `universal-codex-product-development-prompt.md` or `omx-super-universal-autonomous-delivery-prompt.md`.
+5. Paste `prompts/universal-codex-product-development-prompt.md` or `prompts/omx-super-universal-autonomous-delivery-prompt.md`.
 
 6. Let Codex build, test, QA, and reconcile every requirement.
 
@@ -1028,7 +1028,7 @@ omx doctor
 Use a stronger prompt, usually:
 
 ```text
-omx-super-universal-autonomous-delivery-prompt.md
+prompts/omx-super-universal-autonomous-delivery-prompt.md
 ```
 
 Make sure the prompt includes:
@@ -1056,7 +1056,7 @@ The super-universal prompt and universal product-development prompt both include
 Use:
 
 ```text
-omx-frontend-redesign-apply-prompt.md
+prompts/omx-frontend-redesign-apply-prompt.md
 ```
 
 Give strong style guidance:
@@ -1077,7 +1077,7 @@ For missing external credentials, the expected behavior is:
 - test local mode
 - mark real integration verification as blocked
 
-Use `omx-api-integration-prompt.md` for this.
+Use `prompts/omx-api-integration-prompt.md` for this.
 
 ## Maintaining This Prompt Library
 
@@ -1144,22 +1144,22 @@ omx-prompts/
   showcase/
     README.md
   AGENTS.template.md
-  generate-agents-md-prompt.md
-  universal-codex-product-development-prompt.md
-  omx-super-universal-autonomous-delivery-prompt.md
-  omx-frontend-redesign-apply-prompt.md
-  omx-feature-from-spec-prompt.md
-  omx-api-integration-prompt.md
-  omx-database-data-model-prompt.md
-  omx-bugfix-root-cause-prompt.md
-  omx-test-and-qa-hardening-prompt.md
-  omx-security-review-hardening-prompt.md
-  omx-performance-optimization-prompt.md
-  omx-production-hardening-prompt.md
-  omx-release-readiness-prompt.md
-  omx-docs-onboarding-runbook-prompt.md
-  omx-product-discovery-prd-prompt.md
-  omx-codebase-audit-and-refactor-plan-prompt.md
+  prompts/generate-agents-md-prompt.md
+  prompts/universal-codex-product-development-prompt.md
+  prompts/omx-super-universal-autonomous-delivery-prompt.md
+  prompts/omx-frontend-redesign-apply-prompt.md
+  prompts/omx-feature-from-spec-prompt.md
+  prompts/omx-api-integration-prompt.md
+  prompts/omx-database-data-model-prompt.md
+  prompts/omx-bugfix-root-cause-prompt.md
+  prompts/omx-test-and-qa-hardening-prompt.md
+  prompts/omx-security-review-hardening-prompt.md
+  prompts/omx-performance-optimization-prompt.md
+  prompts/omx-production-hardening-prompt.md
+  prompts/omx-release-readiness-prompt.md
+  prompts/omx-docs-onboarding-runbook-prompt.md
+  prompts/omx-product-discovery-prd-prompt.md
+  prompts/omx-codebase-audit-and-refactor-plan-prompt.md
 ```
 
 ## Minimal First Run
@@ -1179,7 +1179,7 @@ codex
 Then paste:
 
 ```text
-omx-super-universal-autonomous-delivery-prompt.md
+prompts/omx-super-universal-autonomous-delivery-prompt.md
 ```
 
 Fill only:

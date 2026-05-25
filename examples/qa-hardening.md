@@ -5,7 +5,7 @@ Use this when a generated or existing project works superficially but needs stro
 Recommended prompt:
 
 ```text
-omx-test-and-qa-hardening-prompt.md
+prompts/omx-test-and-qa-hardening-prompt.md
 ```
 
 Filled placeholders:

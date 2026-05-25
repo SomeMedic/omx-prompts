@@ -5,7 +5,7 @@ Use this when the folder has no code and no documentation yet.
 Recommended prompt:
 
 ```text
-omx-super-universal-autonomous-delivery-prompt.md
+prompts/omx-super-universal-autonomous-delivery-prompt.md
 ```
 
 Filled placeholders:

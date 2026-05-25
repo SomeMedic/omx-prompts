@@ -5,7 +5,7 @@ Use this when a feature depends on Stripe, OpenAI, Google, email, storage, CRM, 
 Recommended prompt:
 
 ```text
-omx-api-integration-prompt.md
+prompts/omx-api-integration-prompt.md
 ```
 
 Filled placeholders:

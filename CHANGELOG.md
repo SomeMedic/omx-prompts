@@ -26,7 +26,7 @@ Initial public release.
 - Product discovery and PRD prompt.
 - Codebase audit and refactor-plan prompt.
 - `AGENTS.template.md` for project-level agent contracts.
-- `generate-agents-md-prompt.md` for generating project-specific `AGENTS.md` files.
+- `prompts/generate-agents-md-prompt.md` for generating project-specific `AGENTS.md` files.
 - Long-form README with setup, prompt catalog, workflow map, troubleshooting, and usage guidance.
 - Local SVG hero image for reliable README rendering.
 

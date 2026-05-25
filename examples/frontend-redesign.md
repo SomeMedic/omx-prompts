@@ -5,7 +5,7 @@ Use this when the app works but the UI is weak, generic, inconsistent, or not al
 Recommended prompt:
 
 ```text
-omx-frontend-redesign-apply-prompt.md
+prompts/omx-frontend-redesign-apply-prompt.md
 ```
 
 Filled placeholders:
